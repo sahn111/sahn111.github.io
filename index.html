@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>I am guessing</title>
+    <title>50 shades of Name</title>
     <style>
       body {
         background-color: #4e4e4e;
@@ -101,27 +101,13 @@
       p {
         font-size: 1.2rem;
         line-height: 1.5;
-      }    
-      #loading {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display: none;
-      }
-      #loading svg {
-        display: block;
-        margin: 0 auto;
-      }      
-      
-      </style>
+      }    </style>
   </head>
   <body>
     <h1 style="color: rgb(139, 187, 187);">ETL Project</h1>
     <div class="input-container">
       <input type="text" placeholder="Type your name..." id="input">
     </div>
-    <div id="loading"></div>
     <div id="response">
       <p></p>
     </div>
@@ -150,8 +136,7 @@
                 <li><a href="https://nationalize.io/" style="color: rgb(139, 187, 187);">Nationalize.io</a></li>
             </ul>
         </div>
-      </div>      
-      <script>
+      </div>      <script>
         const input = document.getElementById("input");
         const preview = document.getElementById("preview");
         const responseDiv = document.getElementById("response");
@@ -170,38 +155,7 @@
           xhr.open("GET", url);
           xhr.send();
         });
-        const input = document.getElementById("input");
-        const loading = document.getElementById("loading");
-
-        const responseDiv = document.getElementById("response");
-
-        input.addEventListener("input", () => {
-          loading.style.display = "block";
-          responseDiv.style.display = "none"; // hide the response until we get a new one
-        });
-
-        function fetchData() {
-          // show the loading image
-          loading.style.display = "block";
-          responseDiv.style.display = "none"; // hide the response until we get a new one
-
-          // make the API request
-          fetch("https://api.example.com/data")
-            .then((response) => response.json())
-            .then((data) => {
-              // display the response and hide the loading image
-              responseDiv.style.display = "block";
-              loading.style.display = "none";
-              // do something with the data
-            })
-            .catch((error) => {
-              console.error(error);
-              // handle the error and hide the loading image
-              responseDiv.style.display = "none";
-              loading.style.display = "none";
-            });
-        }      
-</script>
+      </script>
     </body>
   </html>
   
