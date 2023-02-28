@@ -1,1 +1,87 @@
-# sahn111.github.io
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Yenilikçi Tasarım</title>
+    <style>
+      body {
+        background: linear-gradient(to bottom, #4c2a87, #ad5389, #3c1053);
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .input-container {
+        margin-top: 50px;
+      }
+
+      input[type="text"] {
+        padding: 10px;
+        border: none;
+        border-radius: 20px;
+        font-size: 18px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        transition: box-shadow 0.3s ease-in-out;
+        width: 300px;
+      }
+
+      input[type="text"]:focus {
+        outline: none;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      }
+
+      .preview-container {
+        margin-top: 50px;
+      }
+
+      iframe {
+        width: 100%;
+        height: 500px;
+        border: none;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+
+      .tech-container {
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .tech-item {
+        padding: 10px 20px;
+        background-color: white;
+        color: #4c2a87;
+        border: none;
+        border-radius: 20px;
+        margin: 10px;
+        font-size: 18px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        transition: box-shadow 0.3s ease-in-out;
+      }
+
+      .tech-item:hover {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Yenilikçi Tasarım</h1>
+    <div class="input-container">
+      <input type="text" placeholder="Bir şeyler yazın...">
+    </div>
+    <div class="preview-container">
+      <h2></h2>
+      <iframe src=""></iframe>
+    </div>
+    <div class="tech-container">
+      <h2>Kullandığım Teknolojiler</h2>
+      <button class="tech-item">HTML</button>
+      <button class="tech-item">CSS</button>
+      <button class="tech-item">JavaScript</button>
+    </div>
+  </body>
